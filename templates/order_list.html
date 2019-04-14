@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        {% for item in orders %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.no }}</td>
+            <td>{{ item.goods.name }}</td>
+            <td>{{ item.get_status_display }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
